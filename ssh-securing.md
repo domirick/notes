@@ -1,4 +1,5 @@
-﻿# How to secure your SSH server
+﻿
+# How to secure your SSH server
 **Over the basics** I have collected some ideas and advices to make more secure you SSH server:
 
 > (Any of the links isn't sponsored, I just found some examples.)
@@ -44,15 +45,16 @@ You can do it in your own, with the help of a video, for example: https://www.yo
 
 Or you can use a tool, which may wouldn't be such precise, for example: https://www.bitdefender.com/solutions/home-scanner.html
 
-  
+## 12. Keep in mind the IoT
+Vulnerabilities get discovered every day, and a lot of IoT devices "benefits" from there. For these cases the solution is the firmware update, but people often forgot the IoT, and some IoT devices doesn't get an update, or the device wasn't designed to update the firmware. If you has IoT devices in your home, the best practice - in my opinion - is to **create a different LAN for the IoT devices, apart from the SSH server**. In this scenario, when one of your IoT devices get infected in your network, hopefully it doesn't affect your SSH server.
 
-## 12. Run automated configuration check
+## 13. Run automated configuration check
 Based on more eyes see more, you can use an automated config checker. Maybe that's find something over which your attention has slipped. Or it is really useful if you are a beginner.
 
 You can search for in the net, and build your's too.
 An example, that I found: https://github.com/gakowalski/linux-admin/blob/master/automated-configuration-check.md
 
-## 13. "Never settle"
+## 14. "Never settle"
 Always train yourself. Security is process, not a status.
 
 ---

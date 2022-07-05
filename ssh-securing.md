@@ -9,7 +9,7 @@ The numbers are not ranking, I just used them instead of points.
 ## 1. Do not use the default port
 Use a 5-digit port instead
 
-## 2. Use the default port for an endlessh
+## 2. Create a honeypot (e.g.: endlessh on the default port)
 More details: https://www.youtube.com/watch?v=SKhKNUo6rJU&ab_channel=Wolfgang%27sChannel
 
 ## 3. Use private key instead of password
@@ -32,13 +32,10 @@ If it turns out, that something in the system has an exploit (0-day), hopefully 
 Even from the previous section, this program can be the Docker.
 
 ## 9. Use fail2ban
-It's also makes the hacker's job harder. More information: 
-  
+It's also makes the hacker's job harder. More information: https://www.fail2ban.org/wiki/index.php/Main_Page
 
 ## 10. Use GeoIP with iptables
 Instructions: https://docs.rackspace.com/support/how-to/block-ip-range-from-countries-with-geoip-and-iptables/
-
-  
 
 ## 11. Pentest your network
 You can do it in your own, with the help of a video, for example: https://www.youtube.com/watch?v=80vIin4xGp8
@@ -47,6 +44,7 @@ Or you can use a tool, which may wouldn't be such precise, for example: https://
 
 ## 12. Keep in mind the IoT
 Vulnerabilities get discovered every day, and a lot of IoT devices "benefits" from there. For these cases the solution is the firmware update, but people often forgot the IoT, and some IoT devices doesn't get an update, or the device wasn't designed to update the firmware. If you has IoT devices in your home, the best practice - in my opinion - is to **create a different LAN for the IoT devices, apart from the SSH server**. In this scenario, when one of your IoT devices get infected in your network, hopefully it doesn't affect your SSH server.
+(On VLANs disable DTP.)
 
 ## 13. Run automated configuration check
 Based on more eyes see more, you can use an automated config checker. Maybe that's find something over which your attention has slipped. Or it is really useful if you are a beginner.
@@ -54,7 +52,10 @@ Based on more eyes see more, you can use an automated config checker. Maybe that
 You can search for in the net, and build your's too.
 An example, that I found: https://github.com/gakowalski/linux-admin/blob/master/automated-configuration-check.md
 
-## 14. "Never settle"
+## 14. Disable what you do not use
+Just to make less opportunity for bugs & exploits.
+
+## 15. "Never settle"
 Always train yourself. Security is process, not a status.
 
 ---
